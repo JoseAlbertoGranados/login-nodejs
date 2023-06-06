@@ -7,6 +7,9 @@
     "test": "nodemon app.js",
     "start": "node app.js"
   },
+  "engines": {
+    "node": ">=14.21.2"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
