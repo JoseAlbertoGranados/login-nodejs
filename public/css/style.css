@@ -1,0 +1,141 @@
+body {
+  background-color: #eeeaea;
+  font-family: "Times New Roman", Times, serif;
+  margin: auto;
+  text-align: center;
+}
+
+.login-form {
+  width: 300px;
+  margin: auto;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 70px 0 10px 0;
+}
+
+.register-form h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 70px 0 10px 0;
+}
+
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  background-color: #6f42c1;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+}
+
+.btn-login:hover,
+.btn-login:active {
+  color: #fff;
+  background-color: #61428f;
+  border-color: #61428f;
+}
+
+.btn-login:focus {
+  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+}
+
+.btn-register {
+  width: 100%;
+  padding: 15px;
+  background-color: #34d399;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+  margin-top: 20px;
+  /*Para dar la apariencia de un button */
+  appearance: button;
+  text-decoration: none;
+}
+
+.btn-register:hover,
+.btn-register:active {
+  color: #fff;
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.btn-register:focus {
+  box-shadow: 0 0 0 3px #10b981;
+}
+
+.register-form {
+  width: 400px;
+  margin: auto;
+  display: inline-block;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.btn-save {
+  width: 30%;
+  background-color: #34d399;
+  color: #fff;
+  padding: 15px;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  width: 30%;
+  text-decoration: none;
+  background-color: #c42222;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: #ffffff;
+  background-color: #b41b1b;
+  border-color: #b41b1b;
+}
+.btn-cancel:focus {
+  box-shadow: 0 0 0 3px #b41b1b;
+}
+
+.btn-save:hover,
+.btn-save:active {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.btn-save:focus {
+  box-shadow: 0 0 0 3px #10b981;
+}

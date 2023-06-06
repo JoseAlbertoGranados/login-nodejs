@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="login-form">
+        <h2>Inicio de Sesión</h2>
+        <form action="/auth" method="POST">
+
+            <input type="text" name="user" id="user" placeholder="Usuario" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" required>
+            <button class="btn-login">Login</button>
+
+        </form>
+        <a href="/register" class="btn-register">Registrar Usuario</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+
+    <% if(typeof(alert) != "undefined") { %>
+        <script>
+        Swal.fire({
+          title: "<%= alertTitle %>",
+          text: "<%= alertMessage %>",
+          icon: "<%= alertIcon %>",
+          showConfirmButton: <%= showConfirmButton %>,
+          timer: <%= timer %>
+        }).then( () =>{
+            window.location="/<%= ruta %>"
+        })
+        </script>
+        
+        <% }else{
+            console.log("Varibles undefined")
+        } %>
+
+</body>
+
+</html>

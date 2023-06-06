@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <title>Registrar Uusario</title>
+</head>
+<body>
+    <div class="register-form">
+        <h2>Registrar Usuario</h2>
+            <form action="/register" method="POST">
+                <label for="name">Nombre completo</label>
+                <input type="text" name="name" id="name" required>
+                <label for="user">Usuario</label>
+                <input type="text" name="user" id="user" required>
+                <label for="rol">Seleccione un rol</label>
+                <select name="rol" id="rol">
+                    <option value="Admin">Admin</option>
+                    <option value="Service">Service</option>
+                </select>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+
+                <div style="display: inline;">
+                    <a href="/" class="btn-cancel">Cancelar</a>
+
+
+                    <button class="btn-save">Registrar</button> 
+                </div>
+
+                   
+            </form>
+    </div>
+</body>
+<!--Links de Sweet Alert2-->
+<script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+
+<% if(typeof(alert) != "undefined") { %>
+<script>
+Swal.fire({
+  title: "<%= alertTitle %>",
+  text: "<%= alertMessage %>",
+  icon: "<%= alertIcon %>",
+  showConfirmButton: <%= showConfirmButton %>,
+  timer: <%= timer %>
+}).then( () =>{
+    window.location="/<%= ruta %>"
+})
+</script>
+
+<% }else{
+    console.log("Varibles undefined")
+} %>
+</html>
