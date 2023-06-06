@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const port = process.env.PORT || 3001;
 //Variables de entorno
 const dotenv = require("dotenv");
 dotenv.config({ path: "./env/.env" });
@@ -147,6 +147,6 @@ app.get("/logout", (req, res) => {
   });
 });
 
-app.listen(3000, (req, res) => {
-  console.log("Server Running in port 3000");
+app.listen(port, (req, res) => {
+  console.log("Server Running in port", port);
 });
